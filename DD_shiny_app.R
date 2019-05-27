@@ -39,6 +39,8 @@ server <- function(input, output, session) {
   # Main Table zone ---------------------------------------------------
   # Load and modify Data
   full_data = read.csv("./data/net-information.csv",header = TRUE,sep = ",", stringsAsFactors = FALSE)
+  drugLinks = read.csv("./data/drug links.csv",header = TRUE,sep = ",", stringsAsFactors = FALSE)
+  
   DSN = as.data.frame(full_data[,-c(3:7, 10:14)])
   DB = as.data.frame(unique(DSN[,c(1,2)]))
 
@@ -52,7 +54,10 @@ server <- function(input, output, session) {
   mytabSN_edges <- reactiveValues(Value = NA)
   
   mytabPP <- reactiveValues(Value = NULL)
+  
   mytabS <- reactiveValues(Value = NULL)
+  pubChemID <- reactiveValues(Value = NULL)
+  
   mytabP <- reactiveValues(Value = NULL)
   
 
@@ -94,7 +99,10 @@ server <- function(input, output, session) {
     
     # SMILE code of the drug
     # mytabS$Value = "CC(C)C[C@H](NC(=O)[C@@H](COC(C)(C)C)NC(=O)[C@H](CC1=CC=C(O)C=C1)NC(=O)[C@H](CO)NC(=O)[C@H](CC1=CNC2=CC=CC=C12)NC(=O)[C@H](CC1=CN=CN1)NC(=O)[C@@H]1CCC(=O)N1)C(=O)N[C@@H](CCCN=C(N)N)C(=O)N1CCC[C@H]1C(=O)NNC(N)=O"
-    mytabS$Value = includeHTML("include2.html")
+    pubChemID = drugLinks[which(drugLinks$DrugBank.ID == input$select_button), 7]
+    if(!is.na(pubChemID)){
+      mytabS$Value = tags$iframe(src=paste0("https://embed.molview.org/v1/?mode=balls&cid=",pubChemID), style="width: 500px; height: 300px;")
+    }
     
     mytabP$Value <<- t(as.data.frame(unique(full_data[which(full_data$ID1 == input$select_button),c(6,7)])))
     colnames(mytabP$Value) = paste("Drug Name:", currentDrugName$Value)
