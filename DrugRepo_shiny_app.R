@@ -175,7 +175,7 @@ server <- function(input, output, session) {
   
   # 1. 
   output$tabSN <- DT::renderDataTable({
-    DT::datatable(mytabSN$Value, rownames = F, escape = FALSE, extensions = c('Buttons', 'Responsive', 'Scroller'), options = list(
+    DT::datatable(mytabSN$Value, rownames = F, escape = FALSE, extensions = c('Buttons', 'Scroller'), options = list(
       dom = 'Bfrtip',
       buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
       deferRender = TRUE,
