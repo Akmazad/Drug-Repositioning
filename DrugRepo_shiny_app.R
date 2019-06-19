@@ -35,7 +35,7 @@ ui <- fluidPage(
                                #        HTML("<div style=\" display: table; \"><img src=\"Drug rep.jpg\",  style=\"height: 100%; width:100%; \"></img></div>")),
                                #        # div(style="width: 100%; height: 100%; display: table; text-align: center;",div(style="display: table-cell; vertical-align: middle;", img(src="Drug rep.jpg", height="50%", width="50%")))),
                                column(width=12, 
-                                      includeMarkdown("DESCRIPTION"))
+                                      includeMarkdown("./data/description.md"))
                       ),
                       fluidRow(
                         tags$br()
