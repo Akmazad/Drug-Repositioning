@@ -8,4 +8,4 @@ for(i in 1:length(files)){
   mat = rbind(mat,temp)
 }
 # colnames(mat) <- paste0("protein.", rep(1, length(temp1), 1))
-write.csv(mat, "testCombined.csv", row.names = F)
+write.csv(mat, "protSim_Combined.csv", row.names = F)
