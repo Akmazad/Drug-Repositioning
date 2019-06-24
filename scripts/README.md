@@ -1,4 +1,5 @@
 ## Drugbank XML parsing
+This [```drugs_xml_new.R```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/drugs_xml_new.R) code is used to parse the Drugbank XML file to extract drug meta-data and store in a data frame. This code should take ~ 6GB of RAM and 2.3hrs running time. Raijin can be used for this task using [```drugs_xml_new.sh```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/drugs_xml_new.sh).
 
 ## Find protein sequence similarity
 | Data | Code |
