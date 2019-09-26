@@ -10,7 +10,7 @@ This [```drugs_xml_new.R```](https://github.com/Akmazad/Drug-Repositioning/blob/
 Run [```multiple_jobs.sh```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/multiple_jobs.sh), which is wrapper around [```parallel_target_Sim_Raijin.sh```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/parallel_target_Sim_Raijin.sh) PBS script for running 100 rows (processed by [```parallel_target_Sim_Raijin.R```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/parallel_target_Sim_Raijin.R)) in parallel on Raijin. All the parallel processes should be finished by 3hrs at max. Note, within the [```parallel_target_Sim_Raijin.R```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/parallel_target_Sim_Raijin.R) file, each row were further parallelized (using ```%dopar%``` function in ```doparallel``` package), where the number of node clusters used is 122.
 
 #### output:
-Opon finishing each process will generate output files named, ```protSim_[startRow]_[endRow].csv```. Save these files in a local directory, say: ```C:\\Users\\Azad\\OneDrive - UNSW\\Vafaee Lab\\Projects\\Deep Brain\\Training 2\\protSims\\```.
+Upon finishing each process will generate output files named, ```protSim_[startRow]_[endRow].csv```. Save these files in a local directory, say: ```C:\\Users\\Azad\\OneDrive - UNSW\\Vafaee Lab\\Projects\\Deep Brain\\Training 2\\protSims\\```.
 
 ### STEP-2:
 Run [```combineFiles.R```](https://github.com/Akmazad/Drug-Repositioning/blob/master/scripts/combineFiles.R) file to combine all the files within a given (hard-coded) into a single one, named, say: ```protSim_Combined.csv```. 
