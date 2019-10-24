@@ -12,7 +12,6 @@ The set of resources that have been used in these literature are listed below:
 |---|---|
 |Drug-Target Network|<ul><li>DrugBank</li><li>Therapeutic Target Database (TTD)</li><li>PharmKB</li><li>ChEMBL</li><li>BindingDB</li><li>IUPHAR/BPS</li></ul>|
 |Drug-drug interaction|<ul><li>DrugBank</li></ul>|
-
 |Drug-SideEffect Net|<ul><li>MetaADEDB</li><li>CTD</li><li>SIDER</li><li>OFFSIDES</li></ul>|
 |Structure similarity net|<ul><li>SMILES from DrugBank</li><li>PubChem</li></ul>|
 |Target sequence similarith net|<ul><li>Uniprot database for Protein sequence</li></ul>|
