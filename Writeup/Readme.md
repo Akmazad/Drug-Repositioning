@@ -48,8 +48,9 @@ The set of resources that have been used in these literature are listed below:
 - 
 
 # Literatures
-|Problem Formulation|Data|Methodology|Validation|Conclusion|
-|---|---|---|---|---|
+|Study|Problem Formulation|Data|Methodology|Validation|Conclusion|
+|---|---|---|---|---|---|
+|<em>deep</em>DR|Predict Drug-Disease association|<ul><li>Drug-Disease annotation</li><li>Drug-side-effect network</li><li>Drug-target net</li><li>Drug-drug similarity net</li></ul>|<ul><li>Random-walk based representation of each network</li><li>Network fusion via Multi-modal deep autoencoder to get high-quality drug features</li><li>Infer drug-disease association score via cVAE (Collective Variational Auto-encoder</li></ul>|<ul><li>Data: ClinicalTrials.gov</li><li>Metrics: AUROC, AUPR</li><li>Methods: <ul><li>DISNet (Inductive Matrix Completion-based)</li><li>KBMF (Kernelized Bayesian Matrix Factorization)</li><li>RWR (Random-walk with restart)</li><li>Katz (Graph-based method)</li><li>RF (Random forest)</li><li>SVM</li></ul></li></ul>|List of drugs with high prediction scores with a certain disease are considered as candidate drugs for repositioning| 
 ## Few points to ponder
 
 # DrugRepo: Our approach
