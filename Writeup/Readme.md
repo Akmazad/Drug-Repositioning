@@ -25,9 +25,15 @@ The set of resources that have been used in these literature are listed below:
 ||[```DisDrugPred```](https://github.com/Akmazad/Drug-Repositioning/blob/master/Writeup/Literatures/2019%20%5BBioinfo%5D%20Drug%20repositioning%20through%20integration%20of%20prior%20knowledge%20and%20projections%20of%20drugs%20and%20diseases.pdf)|<ul><li>Drug-Disease annotation</li><li>Drug-drug similarity net:<ul><li>Chemical structure</li><li>Target similarity</li><li>Side-effect</li><li>Pathway similarity</li></ul></li></ul>|Non-negative matrix factorization|<ul><li>Metrics: TPR/FPR, AUROC, AUPR</li><li>Methods: <ul><li>TL-HGBI (Inormation flow based)</li><li>MBiRW (Random walk based)</li><li>LRSSL (Optimization based)</li><li>SCMFDD (Constrained Matrix factorization)</li></ul></li></ul>|Same as <em>deep</em>DR|
 
 ## Few points to ponder
-<ul><li>Methods that predict drug-disease association through the incorporation of known drug-disease pairs (e.g. deepDR, DisDrugPred BNNR, etc) are likely to find similar drugswith same as class as query drug  (i.e. associated with similar disease) , correct?</li><li>In deepDR, drug-side-effect matrix </li></ul>
+<ul><li>Methods that predict drug-disease association through the incorporation of known drug-disease pairs (e.g. deepDR, DisDrugPred BNNR, etc) are likely to find similar drugswith same as class as query drug  (i.e. associated with similar disease) , correct?</li><li>In deepDR, drug-side-effect matrix is used to construct Drug-side-effects’ similarity measure, and then use that in their analysis, which seems unreasonable; candidate drugs with similar side-effect should be avoided, right?</li></ul>
 
 # DrugRepo: Our approach
+ - Datasets: <ul><li>DrugBank drug information</li><li>KEGG pathways</li></ul>
+ - Method: 
+    + For a query drug, DrugRepo prioritizes candidate drugs based on their combined ranks in all three similarity matrices.
+    + DrugRepo also uses drug-drug similarity measures in order to find candidate drugs (```D_j```) for a query drug (```D_i```). We've compiled following three similarity matrices so far.
+<ul><li>Chemical structure similairy</li><li>Target protein sequence similarity</li><li>Pathway similarity</li></ul>
+    + Each similarity matrices are sorted in descending order of their similarity score.
 
 ## What we can do more
 
