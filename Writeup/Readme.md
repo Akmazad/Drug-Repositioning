@@ -3,7 +3,8 @@ Traditional drug discovery and development are often time-consuming and high ris
 
 In the quest for a list of state-of-the-art <em>In silico</em> methods, we've been conducting a manual literature survey using the search keyword, "Drug Repositioning" in the websites for Nature and Bioinformatics journals which yielded 42 articles so far ![published 2004-2019](https://github.com/Akmazad/Drug-Repositioning/blob/master/Writeup/Literatures/count%20of%20publication.png). 
 
-
+<ul><li></li></ul>
+<li></li>
 # Resources
 The set of resources that have been used in these literature are listed below:
 
@@ -12,35 +13,13 @@ The set of resources that have been used in these literature are listed below:
 |Drug-Target Network|<ul><li>DrugBank</li><li>Therapeutic Target Database (TTD)</li><li>PharmKB</li><li>ChEMBL</li><li>BindingDB</li><li>IUPHAR/BPS</li></ul>|
 |Drug-drug interaction|<ul><li>DrugBank</li></ul>|
 
-## Drug-SideEffect Net:
-### Source:
-- MetaADEDB
-- CTD
-- SIDER
-- OFFSIDES
-## Structure similarity net:
-### Source:
-- SMILES from DrugBank
-- PubChem
-## Target sequence similarith net:
-### Source:
-- Uniprot database for Protein sequence
-## Pathway similarity net:
-### Source:
-- KEGG
-- GO terms (BP, CC, MF)
-## Clinical similarity (drug-disease)
-### Source:
-- ATC (Anatomical Therapeutics chemical classification) from DrugBank
-- ICD10 (International classification of disease 10)
-- ClinicalTrials.gov
-## Disease MESH terms
-### Source:
-- OMIM database
-## GE profiles
-### Source:
-- CMap (7000 GE profiles from Human cell-lines, that are treated with various small-molecules)
-- 
+|Drug-SideEffect Net|<ul><li>MetaADEDB</li><li>CTD</li><li>SIDER</li><li>OFFSIDES</li></ul>|
+|Structure similarity net|<ul><li>SMILES from DrugBank</li><li>PubChem</li></ul>|
+|Target sequence similarith net|<ul><li>Uniprot database for Protein sequence</li></ul>|
+|Pathway similarity net|<ul><li>KEGG</li><li>GO terms (BP, CC, MF)</li></ul>|
+|Clinical similarity (drug-disease)|<ul><li>ATC (Anatomical Therapeutics chemical classification) from DrugBank</li><li>ICD10 (International classification of disease 10)</li><li>ClinicalTrials.gov</li></ul>|
+|Disease MESH terms|<ul><li>OMIM database</li></ul>|
+|GE profiles|<ul><li>CMap (7000 GE profiles from Human cell-lines, that are treated with various small-molecules)</li></ul>|
 
 # Literatures
 |Study|Problem Formulation|Data|Methodology|Validation|Conclusion|
