@@ -3,8 +3,6 @@ Traditional drug discovery and development are often time-consuming and high ris
 
 In the quest for a list of state-of-the-art <em>In silico</em> methods, we've been conducting a manual literature survey using the search keyword, "Drug Repositioning" in the websites for Nature and Bioinformatics journals which yielded 42 articles so far ![published 2004-2019](https://github.com/Akmazad/Drug-Repositioning/blob/master/Writeup/Literatures/count%20of%20publication.png). 
 
-<ul><li></li></ul>
-<li></li>
 # Resources
 The set of resources that have been used in these literature are listed below:
 
