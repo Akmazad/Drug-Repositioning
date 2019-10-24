@@ -6,7 +6,7 @@ In the quest for a list of state-of-the-art <em>In silico</em> methods, we've be
 # Resources
 The set of resources that have been used in these literature are listed below:
 
-|Type|Source|
+|:- Type -|:- Source  -|
 |---|---|
 |Drug-Target Network|<ul><li>DrugBank</li><li>Therapeutic Target Database (TTD)</li><li>PharmKB</li><li>ChEMBL</li><li>BindingDB</li><li>IUPHAR/BPS</li></ul>|
 |Drug-drug interaction|<ul><li>DrugBank</li></ul>|
