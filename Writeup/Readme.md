@@ -32,9 +32,9 @@ The set of resources that have been used in these literature are listed below:
  - Method: 
     + For a query drug, DrugRepo prioritizes candidate drugs based on their combined ranks in all three similarity matrices.
     + DrugRepo also uses drug-drug similarity measures in order to find candidate drugs (```D_j```) for a query drug (```D_i```). We've compiled following three similarity matrices so far.
-    ++ Chemical structure similairy
-    ++ Target protein sequence similarity
-    ++ Pathway similarity
+     + Chemical structure similairy
+     + Target protein sequence similarity
+     + Pathway similarity
     + Each similarity matrices are sorted in descending order of their similarity score.
 
 ## What we can do more
