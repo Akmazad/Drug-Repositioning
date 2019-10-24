@@ -40,7 +40,9 @@ The set of resources that have been used in these literature are listed below:
        - Target protein sequence similarity
        - Pathway similarity
     + Each similarity matrices are sorted in descending order of their similarity score.
+    + Next, corresponding ranks are the aggregated to get final ranking.
     + A [```shiny app```](http://vafaeelab.com/drugrepositioning.html) for this project is under construction 
 
 ## What we can do more
 - We can add the "Relative side-effect" of query-candidate drug-pairs as another feature in the ranking of candidate drugs, which can be defined as below. The idea is, lower value of (Query-vs-Candidate) relative side-effect should be higher in the ranking, <em>vice versa</em>.
+- We can adopt more sophisticated way of combining individual ranks to get the combined ranking. 
