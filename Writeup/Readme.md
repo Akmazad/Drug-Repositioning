@@ -36,7 +36,7 @@ The set of resources that have been used in these literature are listed below:
        - Target protein sequence similarity
        - Pathway similarity
     + Each similarity matrices are sorted in descending order of their similarity score.
-    + We've built a shiny app for this project ([```link```](http://vafaeelab.com/drugrepositioning.html))
+    + A [```shiny app```](http://vafaeelab.com/drugrepositioning.html) for this project is under construction 
 
 ## What we can do more
 
