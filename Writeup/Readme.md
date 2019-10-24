@@ -45,9 +45,11 @@ The set of resources that have been used in these literature are listed below:
 ## GE profiles
 ### Source:
 - CMap (7000 GE profiles from Human cell-lines, that are treated with various small-molecules)
+- 
 
 # Literatures
-
+|Problem Formulation|Data|Methodology|Validation|Conclusion|
+|---|---|---|---|---|
 ## Few points to ponder
 
 # DrugRepo: Our approach
