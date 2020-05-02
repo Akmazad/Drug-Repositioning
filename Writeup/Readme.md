@@ -18,7 +18,7 @@ The set of resources that have been used in these literature are listed below:
 |Clinical similarity (drug-disease)|<ul><li>ATC (Anatomical Therapeutics chemical classification) from DrugBank</li><li>ICD10 (International classification of disease 10)</li><li>ClinicalTrials.gov</li></ul>|
 |Disease MESH terms|<ul><li>OMIM database</li></ul>|
 |GE profiles|<ul><li>CMap (7000 GE profiles from Human cell-lines, that are treated with various small-molecules)</li><li>TCGA</li></ul>|
-|more (here - page 5)[https://github.com/Akmazad/Drug-Repositioning/blob/master/Writeup/Literatures/2019%20%5BSci%20Reports%5D%20%5Bsupple%5D%20Drug-Drug%20Interaction%20Predicting%20by%20Neural%20Network%20Using%20Integrated%20Similarity.pdf]||
+|more [here - page 5](https://github.com/Akmazad/Drug-Repositioning/blob/master/Writeup/Literatures/2019%20%5BSci%20Reports%5D%20%5Bsupple%5D%20Drug-Drug%20Interaction%20Predicting%20by%20Neural%20Network%20Using%20Integrated%20Similarity.pdf)||
 
 # Literatures
 |Problem Formulation|Study|Data|Methodology|Validation|Conclusion|
